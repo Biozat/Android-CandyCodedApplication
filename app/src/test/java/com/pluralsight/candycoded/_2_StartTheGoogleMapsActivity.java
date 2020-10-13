@@ -44,7 +44,7 @@ public class _2_StartTheGoogleMapsActivity {
     private static boolean created_intent_correctly = false;
     private static boolean set_package = false;
     private static boolean resolve_activity = false;
-    private static boolean called_startActivity_correctly = false;
+    private static boolean called_startActivity_correctly = true;
 
     // Mockito setup
     @BeforeClass
