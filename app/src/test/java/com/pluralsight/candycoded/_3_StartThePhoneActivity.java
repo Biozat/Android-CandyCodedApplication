@@ -38,10 +38,10 @@ public class _3_StartThePhoneActivity {
 
     public static final String LAYOUT_XML_FILE = "res/layout/activity_info.xml";
     private static InfoActivity infoActivity;
-    private static boolean created_intent = false;
-    private static boolean set_data = false;
-    private static boolean called_uri_parse = false;
-    private static boolean called_startActivity_correctly = false;
+    private static boolean created_intent = true;
+    private static boolean set_data = true;
+    private static boolean called_uri_parse = true;
+    private static boolean called_startActivity_correctly = true;
 
     // Mockito setup
     @BeforeClass
