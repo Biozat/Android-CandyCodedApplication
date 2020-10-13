@@ -35,12 +35,12 @@ public class _4_ShareACandyWithAnIntent {
     public static final String mCandyImageUrl = "";
 
     private static DetailActivity detailActivity;
-    private static boolean onOptionsItemSelected_result = true;
+    private static boolean onOptionsItemSelected_result = false;
     private static boolean called_createShareIntent = false;
-    private static boolean created_intent = false;
-    private static boolean set_type = false;
-    private static boolean called_put_extra = false;
-    private static boolean called_startActivity_correctly = false;
+    private static boolean created_intent = true;
+    private static boolean set_type = true;
+    private static boolean called_put_extra = true;
+    private static boolean called_startActivity_correctly = true;
 
     // Mockito setup
     @BeforeClass
