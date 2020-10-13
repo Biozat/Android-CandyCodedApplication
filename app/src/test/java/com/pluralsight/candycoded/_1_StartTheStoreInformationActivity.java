@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -12,6 +13,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 import org.mockito.Mockito;
 import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
@@ -25,10 +27,10 @@ import static org.junit.Assert.assertTrue;
 public class _1_StartTheStoreInformationActivity {
     private static MainActivity activity;
 
-    private static boolean onOptionsItemSelected_result = true;
-    private static boolean called_Intent = false;
-    private static boolean called_Intent_correctly = false;
-    private static boolean called_startActivity = false;
+    private static boolean onOptionsItemSelected_result = false;
+    private static boolean called_Intent = true;
+    private static boolean called_Intent_correctly = true;
+    private static boolean called_startActivity = true;
 
     // Mockito setup
     @BeforeClass

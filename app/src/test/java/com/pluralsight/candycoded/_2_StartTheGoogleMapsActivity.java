@@ -15,6 +15,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.xmlpull.v1.XmlPullParser;
@@ -34,6 +35,7 @@ import static org.mockito.Mockito.verify;
 //@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @PrepareForTest({AppCompatActivity.class, Intent.class, Uri.class, InfoActivity.class})
 @RunWith(PowerMockRunner.class)
+@PowerMockIgnore("jdk.internal.reflect.*")
 public class _2_StartTheGoogleMapsActivity {
 
     public static final String LAYOUT_XML_FILE = "res/layout/activity_info.xml";
